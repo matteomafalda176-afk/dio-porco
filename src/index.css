@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * ============================================
+ * COLOR PALETTE IMPLEMENTATION
+ * ============================================
+ * Simplified 3-color neutral palette
+ *
+ * Color Hierarchy:
+ * 1. Primary Black (#0B0D12) - Dominant background
+ * 2. Neutral Grays (#F5F7FA, #6B7280, #9CA3AF) - Text, borders, accents
+ * 3. CTA Orange (#ff6a00) - EXCLUSIVE for CTAs ONLY
+ *
+ * IMPORTANT: Orange is reserved EXCLUSIVELY for Call-to-Action elements
+ * - Primary action buttons
+ * - Submit buttons
+ * - Key interactive elements
+ *
+ * Accessibility: WCAG AA compliant
+ * - Normal text: 4.5:1 contrast ratio minimum
+ * - Large text: 3:1 contrast ratio minimum
+ */
+
+:root {
+  /* Primary Colors - Custom Properties */
+  --color-brand-black: #0B0D12;
+  --color-brand-black-rgb: 11, 13, 18;
+
+  --color-brand-white: #F5F7FA;
+  --color-brand-white-rgb: 245, 247, 250;
+
+  --color-brand-gray: #6B7280;
+  --color-brand-gray-rgb: 107, 114, 128;
+
+  --color-brand-gray-light: #9CA3AF;
+  --color-brand-gray-light-rgb: 156, 163, 175;
+
+  /* CTA Orange - EXCLUSIVE for Call-to-Action elements ONLY */
+  --color-brand-orange: #ff6a00;
+  --color-brand-orange-rgb: 255, 106, 0;
+
+  /* Smooth scrolling behavior for navigation */
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  /* Global smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Main body styling - Primary Black dominance (80%) */
+  body {
+    background: var(--color-brand-black);
+    color: var(--color-brand-white);
+    position: relative;
+  }
+
+  /* Grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.6;
+  }
+
+  /* Smooth scroll offset for sticky header navigation */
+  section {
+    scroll-margin-top: 90px;
+  }
+
+  /* Prevent horizontal scrollbar */
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Support for sticky positioning across browsers */
+  header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    will-change: transform;
+  }
+
+  /* Optimize scrolling performance */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .grain {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.25'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+    z-index: 1;
+    border-radius: inherit;
+  }
+
+  .grain > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .hover\:scale-\[1\.02\]:active {
+      transform: scale(0.98);
+    }
+  }
+
+  @media (max-width: 640px) {
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button, a {
+      touch-action: manipulation;
+    }
+
+    input, textarea, select {
+      font-size: 16px;
+    }
+  }
+}
