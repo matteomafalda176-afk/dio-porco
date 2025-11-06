@@ -4,41 +4,44 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary Light Background - Dominant (80% usage)
-        // Hex: #FAFAF8 | RGB: 250, 250, 248 - Warm off-white/cream
-        'brand-white': '#FAFAF8',
+        // Premium Black Theme - Pure Black Backgrounds
+        // Hex: #000000 | RGB: 0, 0, 0 - Pure black dominant
+        'brand-black': '#000000',
 
-        // Text Color - Dark charcoal for excellent contrast
-        // Hex: #2B2B2B | RGB: 43, 43, 43
-        'brand-black': '#2B2B2B',
+        // Hex: #0A0A0A | RGB: 10, 10, 10 - Zinc-950 alternate sections
+        'brand-zinc-950': '#0A0A0A',
 
-        // Medium Gray - Borders, dividers, subtle text
-        // Hex: #9CA3AF | RGB: 156, 163, 175
-        'brand-gray': '#9CA3AF',
+        // Hex: #18181B | RGB: 24, 24, 27 - Zinc-900 elevated cards
+        'brand-zinc-900': '#18181B',
 
-        // Light Gray - Hover states, secondary backgrounds
-        // Hex: #E5E7EB | RGB: 229, 231, 235
-        'brand-gray-light': '#E5E7EB',
+        // Text Colors - Maximum Contrast
+        // Hex: #FFFFFF | RGB: 255, 255, 255 - Pure white titles (21:1 contrast)
+        'brand-white': '#FFFFFF',
 
-        // CTA Orange - EXCLUSIVE for Call-to-Action elements ONLY
-        // Hex: #ff6a00 | RGB: 255, 106, 0
-        'brand-orange': '#ff6a00',
+        // Hex: #D1D5DB | RGB: 209, 213, 219 - Gray-300 body text (14:1 contrast)
+        'brand-gray': '#D1D5DB',
 
-        // Pastel Accents - From design references
-        // Lilac: #E8D5F5 | RGB: 232, 213, 245
-        'brand-lilac': '#E8D5F5',
+        // Hex: #9CA3AF | RGB: 156, 163, 175 - Gray-400 secondary text (8:1 contrast)
+        'brand-gray-light': '#9CA3AF',
 
-        // Dusty Rose: #C9A7A5 | RGB: 201, 167, 165
-        'brand-rose': '#C9A7A5',
+        // Vibrant Accents - Colors that "Pop" on Black
+        // Hex: #F97316 | RGB: 249, 115, 22 - Orange-500 for CTAs with glow
+        'brand-orange': '#F97316',
 
-        // Teal/Blue: #5BA4A4 | RGB: 91, 164, 164
-        'brand-teal': '#5BA4A4',
+        // Hex: #22D3EE | RGB: 34, 211, 238 - Cyan-400 high-tech accent
+        'brand-cyan': '#22D3EE',
 
-        // Mocha: #8B7355 | RGB: 139, 115, 85
-        'brand-mocha': '#8B7355',
+        // Hex: #06B6D4 | RGB: 6, 182, 212 - Cyan-500 darker cyan
+        'brand-cyan-dark': '#06B6D4',
 
-        // Dark Section Background: #3A3A3A | RGB: 58, 58, 58
-        'brand-dark': '#3A3A3A',
+        // Hex: #FACC15 | RGB: 250, 204, 21 - Yellow-400 metallic gold
+        'brand-gold': '#FACC15',
+
+        // Hex: #A855F7 | RGB: 168, 85, 247 - Purple-500 tertiary accent
+        'brand-purple': '#A855F7',
+
+        // Hex: #C084FC | RGB: 192, 132, 252 - Purple-400 lighter purple
+        'brand-purple-light': '#C084FC',
       },
       fontFamily: {
         'sans': ['Montserrat', 'system-ui', 'sans-serif'],
