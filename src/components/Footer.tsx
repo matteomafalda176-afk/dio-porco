@@ -169,34 +169,34 @@ const Footer: React.FC = () => {
 
       {showContactModal && (
         <div className="fixed inset-0 bg-brand-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6" onClick={() => setShowContactModal(false)}>
-          <div className="bg-brand-black border-2 border-brand-gray/30 rounded-3xl p-6 sm:p-8 max-w-lg w-full grain" onClick={(e) => e.stopPropagation()}>
-            <h3 className="text-xl sm:text-2xl font-display font-bold text-brand-white mb-5 sm:mb-6">Contattaci</h3>
+          <div className="bg-brand-white border-2 border-brand-gray-light rounded-3xl p-6 sm:p-8 max-w-lg w-full" onClick={(e) => e.stopPropagation()}>
+            <h3 className="text-xl sm:text-2xl font-display font-bold text-brand-black mb-5 sm:mb-6">Contattaci</h3>
             <form className="space-y-3 sm:space-y-4">
               <input
                 type="text"
                 placeholder="Nome"
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange transition-colors"
+                className="w-full bg-brand-gray-light/40 border-2 border-brand-gray-light rounded-xl px-4 py-3 text-brand-black text-sm sm:text-base placeholder-brand-black/50 focus:outline-none focus:border-brand-orange transition-colors"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange transition-colors"
+                className="w-full bg-brand-gray-light/40 border-2 border-brand-gray-light rounded-xl px-4 py-3 text-brand-black text-sm sm:text-base placeholder-brand-black/50 focus:outline-none focus:border-brand-orange transition-colors"
               />
               <textarea
                 placeholder="Messaggio"
                 rows={4}
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange resize-none transition-colors"
+                className="w-full bg-brand-gray-light/40 border-2 border-brand-gray-light rounded-xl px-4 py-3 text-brand-black text-sm sm:text-base placeholder-brand-black/50 focus:outline-none focus:border-brand-orange resize-none transition-colors"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold transition-all duration-300 grain text-sm sm:text-base"
+                className="w-full bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold transition-all duration-300 text-sm sm:text-base"
               >
                 Invia Messaggio
               </button>
               <button
                 type="button"
                 onClick={() => setShowContactModal(false)}
-                className="w-full border-2 border-brand-gray/30 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold hover:bg-brand-gray/10 active:scale-95 transition-all duration-300 text-sm sm:text-base"
+                className="w-full border-2 border-brand-gray-light text-brand-black px-8 py-3.5 sm:py-4 rounded-2xl font-bold hover:bg-brand-gray-light/40 active:scale-95 transition-all duration-300 text-sm sm:text-base"
               >
                 Chiudi
               </button>
