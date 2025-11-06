@@ -9,14 +9,14 @@ import FloatingCTA from './components/FloatingCTA';
 
 function App() {
   return (
-    <div className="min-h-screen bg-brand-black">
+    <div className="min-h-screen bg-brand-white">
       <Header />
       <Hero />
-      <div className="bg-gradient-to-b from-brand-black via-brand-gray/5 to-brand-black">
+      <div className="bg-brand-white">
         <Services />
       </div>
       <Portfolio />
-      <div className="bg-gradient-to-b from-brand-black via-brand-gray/5 to-brand-black">
+      <div className="bg-brand-white">
         <About />
       </div>
       <Footer />
