@@ -42,13 +42,13 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="servizi" className="py-6 sm:py-12 lg:py-14">
+    <section id="servizi" className="py-6 sm:py-12 lg:py-14 bg-brand-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-10 lg:mb-12 animate-fade-in">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-bold text-brand-white mb-2 sm:mb-4 lg:mb-5 px-3">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-bold text-brand-black mb-2 sm:mb-4 lg:mb-5 px-3">
             I Nostri Servizi
           </h2>
-          <p className="text-sm sm:text-xl text-brand-white/80 max-w-3xl mx-auto leading-relaxed px-3">
+          <p className="text-sm sm:text-xl text-brand-black/70 max-w-3xl mx-auto leading-relaxed px-3">
             Offriamo soluzioni complete di design digitale e visualizzazione 3D
             per professionisti, studi e aziende che vogliono comunicare con impatto.
           </p>
@@ -59,34 +59,34 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl sm:rounded-3xl p-2.5 sm:p-6 lg:p-8 hover:shadow-2xl hover:border-brand-orange hover:scale-[1.02] active:scale-95 transition-all duration-300 animate-slide-up group grain flex flex-col h-full relative overflow-hidden"
+              className="bg-brand-gray-light/40 border-2 border-brand-gray-light hover:border-brand-orange hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-300 animate-slide-up group flex flex-col h-full relative overflow-hidden rounded-xl sm:rounded-3xl p-2.5 sm:p-6 lg:p-8"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/5 rounded-full blur-3xl group-hover:bg-brand-orange/10 transition-all duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-lilac/30 rounded-full blur-3xl group-hover:bg-brand-lilac/50 transition-all duration-500"></div>
 
-              <div className="text-brand-gray-light mb-2 sm:mb-4 lg:mb-6 group-hover:text-brand-orange group-hover:scale-110 transition-all duration-300 p-1.5 sm:p-3 lg:p-4 bg-brand-black/40 rounded-lg sm:rounded-2xl w-fit relative z-10">
+              <div className="text-brand-mocha mb-2 sm:mb-4 lg:mb-6 group-hover:text-brand-orange group-hover:scale-110 transition-all duration-300 p-1.5 sm:p-3 lg:p-4 bg-brand-lilac/50 rounded-lg sm:rounded-2xl w-fit relative z-10">
                 {service.icon}
               </div>
 
-              <h3 className="text-sm sm:text-xl lg:text-2xl font-display font-bold text-brand-white mb-1.5 sm:mb-3 lg:mb-4 group-hover:text-brand-orange transition-colors duration-300 relative z-10 leading-tight">
+              <h3 className="text-sm sm:text-xl lg:text-2xl font-display font-bold text-brand-black mb-1.5 sm:mb-3 lg:mb-4 group-hover:text-brand-orange transition-colors duration-300 relative z-10 leading-tight">
                 {service.title}
               </h3>
 
-              <p className="text-[10px] sm:text-sm lg:text-base text-brand-white/90 mb-2 sm:mb-5 lg:mb-6 leading-snug sm:leading-relaxed relative z-10">
+              <p className="text-[10px] sm:text-sm lg:text-base text-brand-black/75 mb-2 sm:mb-5 lg:mb-6 leading-snug sm:leading-relaxed relative z-10">
                 {service.description}
               </p>
 
               <ul className="space-y-1 sm:space-y-2 lg:space-y-3 mb-2 sm:mb-5 lg:mb-6 flex-grow relative z-10">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-brand-white/80 text-[9px] sm:text-sm lg:text-base group-hover:text-brand-white transition-colors">
+                  <li key={featureIndex} className="flex items-center text-brand-black/70 text-[9px] sm:text-sm lg:text-base group-hover:text-brand-black transition-colors">
                     <div className="w-1 h-1 sm:w-2 sm:h-2 bg-brand-orange rounded-full mr-1.5 sm:mr-3 lg:mr-4 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
                     <span className="font-medium">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="pt-2 sm:pt-4 lg:pt-5 border-t border-brand-gray/30 mt-auto relative z-10">
-                <button className="bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white font-bold py-2 sm:py-3 lg:py-3.5 px-2 sm:px-5 lg:px-6 rounded-lg sm:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-brand-orange/20 flex items-center grain text-[10px] sm:text-sm lg:text-base w-full justify-center group-hover:scale-105 min-h-[44px] sm:min-h-0">
+              <div className="pt-2 sm:pt-4 lg:pt-5 border-t border-brand-gray-light mt-auto relative z-10">
+                <button className="bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white font-bold py-2 sm:py-3 lg:py-3.5 px-2 sm:px-5 lg:px-6 rounded-lg sm:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-brand-orange/20 flex items-center text-[10px] sm:text-sm lg:text-base w-full justify-center group-hover:scale-105 min-h-[44px] sm:min-h-0">
                   Scopri di più
                   <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
                 </button>
