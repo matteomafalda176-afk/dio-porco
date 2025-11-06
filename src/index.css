@@ -4,106 +4,112 @@
 
 /**
  * ============================================
- * RENDER STUDIO - REDESIGNED VISUAL SYSTEM
+ * RENDER STUDIO - PREMIUM BLACK THEME
  * ============================================
  *
  * DESIGN PHILOSOPHY:
- * Inspired by modern design studios (Chiba Creative Lab, Kami Trzaskowska Interiors)
- * - Light, airy aesthetic with generous whitespace
- * - Elegant typography hierarchy
- * - Pastel accents for sophistication
- * - Orange (#ff6a00) reserved exclusively for CTAs
- * - Dark section for strategic contrast
+ * Ultimate contrast and vibrancy on pure black
+ * - Pure Black (#000000) dominant background
+ * - Maximum contrast typography (21:1 WCAG AAA)
+ * - Vibrant neon-like accents
+ * - Glassmorphism effects with cyan glow
+ * - Floating gradient blobs with vibrant colors
  *
- * COLOR PALETTE:
- * 1. Primary Background: #FAFAF8 (Warm cream/off-white) - 80% usage
- * 2. Text/Dark: #2B2B2B (Dark charcoal) - WCAG AA compliant contrast
- * 3. Grays: #9CA3AF (medium), #E5E7EB (light) - Borders, secondary text
- * 4. Pastels: Lilac #E8D5F5, Rose #C9A7A5, Teal #5BA4A4, Mocha #8B7355
- * 5. CTA: Orange #ff6a00 - Buttons, key actions ONLY
- * 6. Dark Section: #3A3A3A - Testimonials, contrast sections
+ * COLOR PALETTE - Black Premium Theme:
+ * Backgrounds:
+ * - Pure Black #000000 - Main background
+ * - Zinc-950 #0A0A0A - Alternate sections
+ * - Zinc-900 #18181B - Elevated cards
  *
- * TYPOGRAPHY:
- * - Display: Playfair Display (serif) - Headers, large titles
- * - Body: Montserrat (sans-serif) - All body text
- * - Strategy: Clean hierarchy with generous leading/spacing
+ * Text (Max Contrast):
+ * - White #FFFFFF - Titles (21:1 ratio)
+ * - Gray-300 #D1D5DB - Body (14:1 ratio)
+ * - Gray-400 #9CA3AF - Secondary (8:1 ratio)
  *
- * SPACING & LAYOUT:
- * - Generous margins and padding (airy feel)
- * - 3-column grid (desktop), 1 column (mobile)
- * - Rounded corners on all interactive elements (12px-24px)
- * - Subtle shadows for depth
+ * Vibrant Accents (Pop on Black):
+ * - Orange #F97316 - Primary CTAs with glow
+ * - Cyan #22D3EE - High-tech accent
+ * - Cyan-dark #06B6D4 - Darker cyan borders
+ * - Gold #FACC15 - Premium metallic highlights
+ * - Purple #A855F7 - Tertiary accent
  *
- * INTERACTIVE ELEMENTS:
- * - Smooth transitions (300ms)
- * - Hover states with slight scale/shadow changes
- * - Touch-optimized tap targets (48px minimum)
- * - No grain texture (clean aesthetic)
+ * FEATURES:
+ * ✓ Glassmorphism: Backdrop blur + cyan border
+ * ✓ Glow Effects: Colored shadows (cyan/orange/purple)
+ * ✓ Gradients: Orange → Gold → Cyan text transitions
+ * ✓ Floating Blobs: Cyan, Orange, Purple, Gold
+ * ✓ Elevation: Black → Zinc-950 → Zinc-900
  */
 
 :root {
-  /* Primary Colors - Light Theme */
-  --color-brand-white: #FAFAF8;
-  --color-brand-white-rgb: 250, 250, 248;
+  /* Premium Black Theme Colors */
+  --color-brand-black: #000000;
+  --color-brand-black-rgb: 0, 0, 0;
 
-  --color-brand-black: #2B2B2B;
-  --color-brand-black-rgb: 43, 43, 43;
+  --color-brand-zinc-950: #0A0A0A;
+  --color-brand-zinc-950-rgb: 10, 10, 10;
 
-  --color-brand-gray: #9CA3AF;
-  --color-brand-gray-rgb: 156, 163, 175;
+  --color-brand-zinc-900: #18181B;
+  --color-brand-zinc-900-rgb: 24, 24, 27;
 
-  --color-brand-gray-light: #E5E7EB;
-  --color-brand-gray-light-rgb: 229, 231, 235;
+  /* Text Colors - Maximum Contrast */
+  --color-brand-white: #FFFFFF;
+  --color-brand-white-rgb: 255, 255, 255;
 
-  /* Pastel Accent Colors */
-  --color-brand-lilac: #E8D5F5;
-  --color-brand-rose: #C9A7A5;
-  --color-brand-teal: #5BA4A4;
-  --color-brand-mocha: #8B7355;
+  --color-brand-gray: #D1D5DB;
+  --color-brand-gray-rgb: 209, 213, 219;
 
-  /* CTA Orange - EXCLUSIVE for Call-to-Action elements ONLY */
-  --color-brand-orange: #ff6a00;
-  --color-brand-orange-rgb: 255, 106, 0;
+  --color-brand-gray-light: #9CA3AF;
+  --color-brand-gray-light-rgb: 156, 163, 175;
 
-  /* Dark Section */
-  --color-brand-dark: #3A3A3A;
+  /* Vibrant Accents */
+  --color-brand-orange: #F97316;
+  --color-brand-orange-rgb: 249, 115, 22;
 
-  /* Smooth scrolling behavior for navigation */
+  --color-brand-cyan: #22D3EE;
+  --color-brand-cyan-rgb: 34, 211, 238;
+
+  --color-brand-cyan-dark: #06B6D4;
+  --color-brand-cyan-dark-rgb: 6, 182, 212;
+
+  --color-brand-gold: #FACC15;
+  --color-brand-gold-rgb: 250, 204, 21;
+
+  --color-brand-purple: #A855F7;
+  --color-brand-purple-rgb: 168, 85, 247;
+
+  --color-brand-purple-light: #C084FC;
+  --color-brand-purple-light-rgb: 192, 132, 252;
+
   scroll-behavior: smooth;
 }
 
 @layer base {
-  /* Global smooth scrolling */
   html {
     scroll-behavior: smooth;
   }
 
-  /* Main body styling - Light theme foundation */
   body {
-    background: var(--color-brand-white);
-    color: var(--color-brand-black);
+    background: var(--color-brand-black);
+    color: var(--color-brand-white);
     position: relative;
   }
 
-  /* Smooth scroll offset for sticky header navigation */
   section {
     scroll-margin-top: 90px;
   }
 
-  /* Prevent horizontal scrollbar */
   html {
     overflow-x: hidden;
   }
 
-  /* Support for sticky positioning across browsers */
   header {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     will-change: transform;
   }
 
-  /* Optimize scrolling performance */
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
