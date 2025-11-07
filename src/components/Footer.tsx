@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <section id="contact" className="py-6 sm:py-12 lg:py-14 bg-brand-dark">
+      <section id="contact" className="py-6 sm:py-12 lg:py-14 bg-gradient-to-r from-brand-orange via-brand-gold to-brand-orange">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-5 sm:mb-8">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-bold text-brand-white mb-2 sm:mb-4 lg:mb-5 px-3">
