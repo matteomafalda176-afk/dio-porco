@@ -41,10 +41,10 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen bg-brand-black flex items-center relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-brand-cyan/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-brand-orange/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-brand-purple/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-brand-gold/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-brand-cyan/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-brand-orange/15 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-brand-purple/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-brand-gold/15 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
