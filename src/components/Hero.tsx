@@ -87,45 +87,6 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div
-              className="relative rounded-3xl p-8 shadow-xl border-2 border-brand-cyan/30 transition-transform duration-300 ease-out"
-              style={{
-                transform: `perspective(1000px) rotateY(${mousePosition.x}deg) rotateX(${-mousePosition.y}deg)`,
-                backgroundColor: 'rgba(24, 24, 27, 0.6)'
-              }}
-            >
-              <div className="grid grid-cols-4 gap-2 mb-6">
-                {gridItems.map((item) => (
-                  <div
-                    key={item}
-                    className={`bg-brand-cyan/20 border border-brand-cyan/40 rounded-xl h-16 transition-all duration-500 ${
-                      showGrid ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
-                    }`}
-                    style={{ transitionDelay: `${item * 50}ms` }}
-                  ></div>
-                ))}
-              </div>
-
-              <div className="bg-brand-zinc-900 rounded-3xl p-8 mb-4 border border-brand-cyan/20 relative group cursor-pointer hover:border-brand-orange hover:shadow-lg hover:shadow-brand-orange/30 transition-all duration-300">
-                <div className="absolute inset-0 flex items-center justify-center bg-brand-zinc-900/70 rounded-3xl group-hover:bg-brand-zinc-900/50 transition-all">
-                  <div className="text-center">
-                    <div className="bg-brand-orange rounded-full p-6 mx-auto mb-4 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-brand-orange/50">
-                      <Play className="text-brand-white fill-brand-white" size={32} />
-                    </div>
-                    <p className="text-brand-white text-sm font-medium">Per comprendere</p>
-                    <p className="text-brand-white text-sm font-medium">al meglio cosa facciamo</p>
-                  </div>
-                </div>
-                <div className="h-64 opacity-0"></div>
-              </div>
-
-              <div className="flex justify-between items-center text-brand-gray-light text-sm">
-                <span>Render Studio</span>
-                <span>Dal 2025</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
