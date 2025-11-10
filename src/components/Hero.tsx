@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative animate-fade-in hidden lg:block" style={{ animationDelay: '0.3s' }}>
+          <div className="relative hidden lg:block">
             <div
               className="relative rounded-3xl p-8 shadow-xl border-2 border-brand-cyan/30 transition-transform duration-300 ease-out"
               style={{
