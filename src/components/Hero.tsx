@@ -1,26 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Sparkles, Play } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [showGrid, setShowGrid] = useState(false);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY } = e;
-      const { innerWidth, innerHeight } = window;
-      const x = (clientX / innerWidth - 0.5) * 20;
-      const y = (clientY / innerHeight - 0.5) * 20;
-      setMousePosition({ x, y });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    setTimeout(() => setShowGrid(true), 100);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   const scrollToServizi = () => {
     const element = document.getElementById('servizi');
