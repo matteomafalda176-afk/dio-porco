@@ -36,7 +36,6 @@ const Hero: React.FC = () => {
     }
   };
 
-  const gridItems = Array.from({ length: 12 }, (_, i) => i);
 
   return (
     <section id="home" className="min-h-screen bg-brand-black flex items-center relative overflow-hidden">
