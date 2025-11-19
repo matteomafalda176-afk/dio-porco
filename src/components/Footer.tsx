@@ -13,13 +13,13 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <section id="contact" className="py-6 sm:py-12 lg:py-14 bg-brand-orange grain">
+      <section id="contact" className="py-6 sm:py-12 lg:py-14 bg-gradient-to-r from-brand-orange via-brand-gold to-brand-orange">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-5 sm:mb-8">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-bold text-brand-white mb-2 sm:mb-4 lg:mb-5 px-3">
               Hai un progetto in mente?
             </h2>
-            <p className="text-sm sm:text-xl text-brand-white/90 leading-relaxed px-3">
+            <p className="text-sm sm:text-xl text-brand-white/85 leading-relaxed px-3">
               Contattaci per una consulenza gratuita e scopri come possiamo aiutarti
             </p>
           </div>
@@ -27,52 +27,52 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-5 mb-5 sm:mb-8">
             <a
               href="tel:+390438123456"
-              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
+              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/15 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
             >
               <Phone className="text-brand-white mx-auto mb-1.5 sm:mb-4 group-hover:scale-110 transition-transform" size={20} />
               <h3 className="text-brand-white font-bold mb-0.5 sm:mb-2 text-xs sm:text-base">Telefono</h3>
-              <p className="text-brand-white/80 text-[10px] sm:text-sm">Chiamaci ora</p>
+              <p className="text-brand-white/70 text-[10px] sm:text-sm">Chiamaci ora</p>
             </a>
 
             <a
               href="https://wa.me/390438123456"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
+              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/15 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
             >
               <MessageCircle className="text-brand-white mx-auto mb-1.5 sm:mb-4 group-hover:scale-110 transition-transform" size={20} />
               <h3 className="text-brand-white font-bold mb-0.5 sm:mb-2 text-xs sm:text-base">WhatsApp</h3>
-              <p className="text-brand-white/80 text-[10px] sm:text-sm">Scrivici subito</p>
+              <p className="text-brand-white/70 text-[10px] sm:text-sm">Scrivici subito</p>
             </a>
 
             <a
               href="mailto:info@renderstudio.it"
-              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
+              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/15 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
             >
               <Mail className="text-brand-white mx-auto mb-1.5 sm:mb-4 group-hover:scale-110 transition-transform" size={20} />
               <h3 className="text-brand-white font-bold mb-0.5 sm:mb-2 text-xs sm:text-base">Email</h3>
-              <p className="text-brand-white/80 text-[10px] sm:text-sm">Inviaci una mail</p>
+              <p className="text-brand-white/70 text-[10px] sm:text-sm">Inviaci una mail</p>
             </a>
 
             <button
               onClick={() => setShowContactModal(true)}
-              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
+              className="bg-brand-white/10 backdrop-blur-sm border-2 border-brand-white/30 rounded-xl sm:rounded-3xl p-3 sm:p-6 hover:bg-brand-white/15 hover:scale-[1.02] active:scale-95 transition-all duration-300 text-center group min-h-[100px] sm:min-h-0 flex flex-col items-center justify-center"
             >
               <Mail className="text-brand-white mx-auto mb-1.5 sm:mb-4 group-hover:scale-110 transition-transform" size={20} />
               <h3 className="text-brand-white font-bold mb-0.5 sm:mb-2 text-xs sm:text-base">Form</h3>
-              <p className="text-brand-white/80 text-[10px] sm:text-sm">Compila il modulo</p>
+              <p className="text-brand-white/70 text-[10px] sm:text-sm">Compila il modulo</p>
             </button>
           </div>
 
           <div className="text-center px-3">
-            <button className="bg-brand-white hover:bg-brand-white/90 text-brand-orange px-6 sm:px-12 py-3.5 sm:py-5 rounded-xl sm:rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-xl text-sm sm:text-base w-full sm:w-auto min-h-[48px]">
+            <button className="bg-brand-orange hover:bg-brand-orange/90 text-brand-white px-6 sm:px-12 py-3.5 sm:py-5 rounded-xl sm:rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-xl text-sm sm:text-base w-full sm:w-auto min-h-[48px]">
               Richiedi Preventivo Gratuito
             </button>
           </div>
         </div>
       </section>
 
-      <footer className="bg-brand-black text-brand-white border-t border-brand-gray/30 grain">
+      <footer className="bg-brand-black text-brand-white border-t border-brand-gray/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
             <div className="sm:col-span-2">
@@ -169,34 +169,34 @@ const Footer: React.FC = () => {
 
       {showContactModal && (
         <div className="fixed inset-0 bg-brand-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6" onClick={() => setShowContactModal(false)}>
-          <div className="bg-brand-black border-2 border-brand-gray/30 rounded-3xl p-6 sm:p-8 max-w-lg w-full grain" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-brand-zinc-900 border-2 border-brand-cyan/30 rounded-3xl p-6 sm:p-8 max-w-lg w-full" onClick={(e) => e.stopPropagation()}>
             <h3 className="text-xl sm:text-2xl font-display font-bold text-brand-white mb-5 sm:mb-6">Contattaci</h3>
             <form className="space-y-3 sm:space-y-4">
               <input
                 type="text"
                 placeholder="Nome"
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange transition-colors"
+                className="w-full bg-brand-zinc-800 border-2 border-brand-zinc-700 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-gray-light/50 focus:outline-none focus:border-brand-cyan transition-colors"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange transition-colors"
+                className="w-full bg-brand-zinc-800 border-2 border-brand-zinc-700 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-gray-light/50 focus:outline-none focus:border-brand-cyan transition-colors"
               />
               <textarea
                 placeholder="Messaggio"
                 rows={4}
-                className="w-full bg-brand-gray/10 border-2 border-brand-gray/30 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-white/50 focus:outline-none focus:border-brand-orange resize-none transition-colors"
+                className="w-full bg-brand-zinc-800 border-2 border-brand-zinc-700 rounded-xl px-4 py-3 text-brand-white text-sm sm:text-base placeholder-brand-gray-light/50 focus:outline-none focus:border-brand-cyan resize-none transition-colors"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold transition-all duration-300 grain text-sm sm:text-base"
+                className="w-full bg-brand-orange hover:bg-brand-orange/90 active:scale-95 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold transition-all duration-300 text-sm sm:text-base shadow-lg shadow-brand-orange/50"
               >
                 Invia Messaggio
               </button>
               <button
                 type="button"
                 onClick={() => setShowContactModal(false)}
-                className="w-full border-2 border-brand-gray/30 text-brand-white px-8 py-3.5 sm:py-4 rounded-2xl font-bold hover:bg-brand-gray/10 active:scale-95 transition-all duration-300 text-sm sm:text-base"
+                className="w-full border-2 border-brand-cyan/30 text-brand-cyan px-8 py-3.5 sm:py-4 rounded-2xl font-bold hover:bg-brand-cyan/10 active:scale-95 transition-all duration-300 text-sm sm:text-base"
               >
                 Chiudi
               </button>

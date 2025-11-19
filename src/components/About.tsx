@@ -48,48 +48,48 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-6 sm:py-12 lg:py-14">
+    <section id="about" className="py-6 sm:py-12 lg:py-14 bg-brand-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-10 lg:mb-12 animate-fade-in">
           <div className="flex items-center justify-center mb-2 sm:mb-4">
-            <MapPin className="text-brand-gray-light mr-2 sm:mr-3" size={20} />
-            <span className="text-brand-white/80 font-medium text-sm sm:text-lg">Vittorio Veneto, Italia</span>
+            <MapPin className="text-brand-cyan mr-2 sm:mr-3" size={20} />
+            <span className="text-brand-gray font-medium text-sm sm:text-lg">Vittorio Veneto, Italia</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-bold text-brand-white mb-2 sm:mb-4 lg:mb-5 px-3">
             Chi Siamo
           </h2>
-          <p className="text-sm sm:text-xl text-brand-white/80 max-w-3xl mx-auto leading-relaxed px-3">
+          <p className="text-sm sm:text-xl text-brand-gray max-w-3xl mx-auto leading-relaxed px-3">
             Render Studio nasce nel 2025 dalla passione di tre giovani creativi per il design digitale e la comunicazione visiva. Dal cuore del Veneto, creiamo soluzioni innovative per il futuro.
           </p>
         </div>
 
         {/* Mission & Story - Mobile: Compact cards, Desktop: Side-by-side */}
         <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 mb-6 sm:mb-10 lg:mb-12">
-          <div className="bg-brand-gray/10 border border-brand-gray/30 rounded-2xl sm:rounded-3xl p-3 sm:p-6 lg:p-7 animate-slide-up grain overflow-hidden">
+          <div className="bg-brand-cyan/10 border border-brand-cyan/20 rounded-2xl sm:rounded-3xl p-3 sm:p-6 lg:p-7 animate-slide-up overflow-hidden shadow-lg shadow-brand-cyan/10">
             <div className="flex items-center mb-2 sm:mb-4">
-              <Target className="text-brand-gray-light mr-2 sm:mr-4" size={20} />
+              <Target className="text-brand-cyan mr-2 sm:mr-4" size={20} />
               <h3 className="text-lg sm:text-3xl font-display font-bold text-brand-white">La Nostra Missione</h3>
             </div>
-            <p className="text-brand-white/80 text-xs sm:text-lg leading-relaxed mb-2 sm:mb-4">
+            <p className="text-brand-gray text-xs sm:text-lg leading-relaxed mb-2 sm:mb-4">
               Trasformare idee e progetti in esperienze digitali straordinarie che comunicano efficacemente la visione creativa dei nostri clienti. Crediamo che ogni progetto meriti una realizzazione digitale di eccellenza.
             </p>
-            <div className="border-l-2 sm:border-l-4 border-brand-orange pl-2 sm:pl-6">
-              <p className="text-brand-orange italic font-medium text-xs sm:text-base">
+            <div className="border-l-2 sm:border-l-4 border-brand-cyan pl-2 sm:pl-6">
+              <p className="text-brand-cyan italic font-medium text-xs sm:text-base">
                 "La creatività è l'intelligenza che si diverte. Noi mettiamo questa filosofia al centro di ogni nostro progetto."
               </p>
             </div>
           </div>
 
-          <div className="bg-brand-gray/10 border border-brand-gray/30 rounded-3xl p-5 sm:p-6 lg:p-7 animate-slide-up grain overflow-hidden" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-brand-purple/10 border border-brand-purple/20 rounded-3xl p-5 sm:p-6 lg:p-7 animate-slide-up overflow-hidden shadow-lg shadow-brand-purple/10" style={{ animationDelay: '0.2s' }}>
             <div className="flex items-center mb-2 sm:mb-4">
-              <Users className="text-brand-gray-light mr-2 sm:mr-4" size={20} />
+              <Users className="text-brand-purple mr-2 sm:mr-4" size={20} />
               <h3 className="text-lg sm:text-3xl font-display font-bold text-brand-white">La Nostra Storia</h3>
             </div>
-            <p className="text-brand-white/80 text-xs sm:text-lg leading-relaxed mb-2 sm:mb-4">
+            <p className="text-brand-gray text-xs sm:text-lg leading-relaxed mb-2 sm:mb-4">
               Fondato nel 2025 a Vittorio Veneto, Render Studio è nato dall'incontro di tre giovani professionisti appassionati di design digitale e tecnologie creative. La nostra sede nel cuore del Veneto ci permette di unire tradizione e innovazione.
             </p>
-            <div className="border-l-2 sm:border-l-4 border-brand-orange pl-2 sm:pl-6">
-              <p className="text-brand-orange italic font-medium text-xs sm:text-base">
+            <div className="border-l-2 sm:border-l-4 border-brand-purple pl-2 sm:pl-6">
+              <p className="text-brand-purple italic font-medium text-xs sm:text-base">
                 "Dalle colline del Prosecco alle metropoli digitali, portiamo la qualità veneta nel mondo del design del futuro."
               </p>
             </div>
@@ -105,16 +105,16 @@ const About: React.FC = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="text-center bg-brand-gray/10 border border-brand-gray/30 rounded-xl sm:rounded-3xl p-2 sm:p-5 lg:p-6 hover:shadow-xl hover:border-brand-orange transition-all duration-300 animate-fade-in grain overflow-hidden active:scale-95"
+                className="text-center bg-brand-zinc-900 border border-brand-zinc-800 hover:border-brand-gold hover:shadow-lg hover:shadow-brand-gold/20 transition-all duration-300 animate-fade-in overflow-hidden active:scale-95 rounded-xl sm:rounded-3xl p-2 sm:p-5 lg:p-6"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-brand-gray-light flex justify-center mb-1 sm:mb-3 lg:mb-4 p-1.5 sm:p-3 lg:p-4 rounded-xl w-fit mx-auto">
+                <div className="text-brand-gold flex justify-center mb-1 sm:mb-3 lg:mb-4 p-1.5 sm:p-3 lg:p-4 rounded-xl w-fit mx-auto">
                   {value.icon}
                 </div>
                 <h4 className="text-sm sm:text-lg lg:text-xl font-display font-semibold text-brand-white mb-1 sm:mb-2 lg:mb-3">
                   {value.title}
                 </h4>
-                <p className="text-[10px] sm:text-sm lg:text-base text-brand-white/80 leading-snug sm:leading-relaxed">
+                <p className="text-[10px] sm:text-sm lg:text-base text-brand-gray leading-snug sm:leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -132,24 +132,24 @@ const About: React.FC = () => {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="bg-brand-gray/10 border border-brand-gray/30 rounded-xl sm:rounded-3xl p-3 sm:p-5 lg:p-6 hover:shadow-xl hover:border-brand-orange transition-all duration-300 animate-slide-up grain overflow-hidden flex flex-col active:scale-[0.98]"
+                className="bg-brand-zinc-900 border border-brand-zinc-800 rounded-xl sm:rounded-3xl p-3 sm:p-5 lg:p-6 hover:shadow-lg hover:border-brand-cyan hover:shadow-brand-cyan/20 transition-all duration-300 animate-slide-up overflow-hidden flex flex-col active:scale-[0.98]"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-brand-black rounded-xl sm:rounded-3xl mx-auto mb-2 sm:mb-3 lg:mb-4 flex items-center justify-center border border-brand-gray/30">
-                  <Users className="text-brand-gray-light" size={16} />
+                <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-brand-cyan/20 rounded-xl sm:rounded-3xl mx-auto mb-2 sm:mb-3 lg:mb-4 flex items-center justify-center border border-brand-cyan/30">
+                  <Users className="text-brand-cyan" size={16} />
                 </div>
                 <h4 className="text-sm sm:text-lg lg:text-xl font-display font-semibold text-brand-white text-center mb-0.5">
                   {member.name}
                 </h4>
-                <p className="text-brand-orange text-center font-semibold mb-1.5 sm:mb-3 lg:mb-4 text-[10px] sm:text-sm lg:text-base">
+                <p className="text-brand-gold text-center font-semibold mb-1.5 sm:mb-3 lg:mb-4 text-[10px] sm:text-sm lg:text-base">
                   {member.role}
                 </p>
-                <p className="text-brand-white/80 leading-snug sm:leading-relaxed mb-2 sm:mb-4 text-[11px] sm:text-sm lg:text-base flex-grow">
+                <p className="text-brand-gray leading-snug sm:leading-relaxed mb-2 sm:mb-4 text-[11px] sm:text-sm lg:text-base flex-grow">
                   {member.description}
                 </p>
                 <div className="flex flex-wrap justify-center gap-1 sm:gap-2">
                   {member.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="bg-brand-gray/10 border border-brand-gray/30 text-brand-gray-light px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-md sm:rounded-xl text-[9px] sm:text-xs font-medium">
+                    <span key={skillIndex} className="bg-brand-zinc-800 border border-brand-cyan/30 text-brand-cyan px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-md sm:rounded-xl text-[9px] sm:text-xs font-medium">
                       {skill}
                     </span>
                   ))}

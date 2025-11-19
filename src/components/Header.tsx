@@ -98,8 +98,8 @@ const Header: React.FC = () => {
       aria-label="Main navigation"
       className={`sticky top-0 w-full z-40 transition-all duration-500 ${
       scrolled
-        ? 'bg-brand-black/95 backdrop-blur-md shadow-lg border-b border-brand-gray/30 grain'
-        : 'bg-brand-black/80 backdrop-blur-sm grain'
+        ? 'bg-brand-black/95 backdrop-blur-xl shadow-lg border-b border-brand-cyan/30'
+        : 'bg-brand-black/90 backdrop-blur-sm'
     }`}
       style={{ position: 'sticky' }}
     >
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
             <h1 className="text-xl sm:text-2xl font-display font-bold text-brand-white">
               Render Studio
             </h1>
-            <p className="text-xs text-brand-gray-light font-medium">Vittorio Veneto</p>
+            <p className="text-xs text-brand-cyan font-medium">Vittorio Veneto</p>
           </div>
 
           {/* Desktop Navigation */}
@@ -125,12 +125,12 @@ const Header: React.FC = () => {
                 onClick={() => scrollToSection(item.id)}
                 aria-label={`Vai a ${item.label}`}
                 aria-current={activeSection === item.id ? 'page' : undefined}
-                className={`text-brand-white hover:text-brand-gray-light font-medium transition-all duration-300 relative group focus:outline-none focus:ring-2 focus:ring-brand-gray-light focus:ring-offset-2 focus:ring-offset-brand-black rounded px-2 py-1 ${
-                  activeSection === item.id ? 'text-brand-gray-light' : ''
+                className={`text-brand-white hover:text-brand-cyan font-medium transition-all duration-300 relative group focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-brand-black rounded px-2 py-1 ${
+                  activeSection === item.id ? 'text-brand-cyan' : ''
                 }`}
               >
                 {item.label}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-brand-gray-light transition-all duration-300 rounded-full ${
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-brand-cyan transition-all duration-300 rounded-full ${
                   activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}></span>
               </button>
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
               aria-label={isMenuOpen ? 'Chiudi menu' : 'Apri menu'}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              className="text-brand-white hover:text-brand-orange transition-all duration-300 p-2 rounded-2xl hover:bg-brand-gray/10 active:scale-95 grain focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-black"
+              className="text-brand-white hover:text-brand-cyan transition-all duration-300 p-2 rounded-2xl hover:bg-brand-zinc-900 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-brand-black"
             >
               {isMenuOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
             </button>
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div
             id="mobile-menu"
-            className="md:hidden bg-brand-black/98 backdrop-blur-md rounded-3xl mt-3 p-5 shadow-2xl border-2 border-brand-gray/30 grain animate-fade-in"
+            className="md:hidden bg-brand-zinc-900/98 backdrop-blur-md rounded-3xl mt-3 p-5 shadow-lg border-2 border-brand-cyan/30 animate-fade-in"
           >
             <nav className="flex flex-col space-y-3" aria-label="Mobile navigation">
               {[
@@ -169,8 +169,8 @@ const Header: React.FC = () => {
                   onClick={() => scrollToSection(item.id)}
                   aria-label={`Vai a ${item.label}`}
                   aria-current={activeSection === item.id ? 'page' : undefined}
-                  className={`text-left text-brand-white hover:text-brand-orange font-bold transition-all duration-300 py-3 px-4 rounded-2xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-orange ${
-                    activeSection === item.id ? 'text-brand-orange bg-brand-orange/10 border-2 border-brand-orange/30' : 'hover:bg-brand-gray/10 border-2 border-transparent'
+                  className={`text-left text-brand-white hover:text-brand-cyan font-bold transition-all duration-300 py-3 px-4 rounded-2xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-cyan ${
+                    activeSection === item.id ? 'text-brand-cyan bg-brand-cyan/10 border-2 border-brand-cyan/30' : 'hover:bg-brand-zinc-800 border-2 border-transparent'
                   }`}
                 >
                   {item.label}

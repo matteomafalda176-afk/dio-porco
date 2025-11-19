@@ -4,26 +4,44 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary Black - Dominant Background (80% usage)
-        // Hex: #0B0D12 | RGB: 11, 13, 18
-        'brand-black': '#0B0D12',
+        // Premium Black Theme - Pure Black Backgrounds
+        // Hex: #000000 | RGB: 0, 0, 0 - Pure black dominant
+        'brand-black': '#000000',
 
-        // Neutral Gray - Light text on dark, alternating sections
-        // Hex: #F5F7FA | RGB: 245, 247, 250
-        'brand-white': '#F5F7FA',
+        // Hex: #0A0A0A | RGB: 10, 10, 10 - Zinc-950 alternate sections
+        'brand-zinc-950': '#0A0A0A',
 
-        // Medium Gray - Borders, dividers, subtle accents
-        // Hex: #6B7280 | RGB: 107, 114, 128
-        'brand-gray': '#6B7280',
+        // Hex: #18181B | RGB: 24, 24, 27 - Zinc-900 elevated cards
+        'brand-zinc-900': '#18181B',
 
-        // Light Gray - Hover states, secondary backgrounds
-        // Hex: #9CA3AF | RGB: 156, 163, 175
+        // Text Colors - Maximum Contrast
+        // Hex: #FFFFFF | RGB: 255, 255, 255 - Pure white titles (21:1 contrast)
+        'brand-white': '#FFFFFF',
+
+        // Hex: #D1D5DB | RGB: 209, 213, 219 - Gray-300 body text (14:1 contrast)
+        'brand-gray': '#D1D5DB',
+
+        // Hex: #9CA3AF | RGB: 156, 163, 175 - Gray-400 secondary text (8:1 contrast)
         'brand-gray-light': '#9CA3AF',
 
-        // CTA Orange - EXCLUSIVE for Call-to-Action elements ONLY
-        // Hex: #ff6a00 | RGB: 255, 106, 0
-        // USE ONLY FOR: Primary buttons, submit buttons, key action elements
-        'brand-orange': '#ff6a00',
+        // Vibrant Accents - Colors that "Pop" on Black
+        // Hex: #F97316 | RGB: 249, 115, 22 - Orange-500 for CTAs with glow
+        'brand-orange': '#F97316',
+
+        // Hex: #22D3EE | RGB: 34, 211, 238 - Cyan-400 high-tech accent
+        'brand-cyan': '#22D3EE',
+
+        // Hex: #06B6D4 | RGB: 6, 182, 212 - Cyan-500 darker cyan
+        'brand-cyan-dark': '#06B6D4',
+
+        // Hex: #FACC15 | RGB: 250, 204, 21 - Yellow-400 metallic gold
+        'brand-gold': '#FACC15',
+
+        // Hex: #A855F7 | RGB: 168, 85, 247 - Purple-500 tertiary accent
+        'brand-purple': '#A855F7',
+
+        // Hex: #C084FC | RGB: 192, 132, 252 - Purple-400 lighter purple
+        'brand-purple-light': '#C084FC',
       },
       fontFamily: {
         'sans': ['Montserrat', 'system-ui', 'sans-serif'],

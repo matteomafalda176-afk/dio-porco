@@ -12,11 +12,11 @@ function App() {
     <div className="min-h-screen bg-brand-black">
       <Header />
       <Hero />
-      <div className="bg-gradient-to-b from-brand-black via-brand-gray/5 to-brand-black">
+      <div className="bg-brand-zinc-950">
         <Services />
       </div>
       <Portfolio />
-      <div className="bg-gradient-to-b from-brand-black via-brand-gray/5 to-brand-black">
+      <div className="bg-brand-zinc-950">
         <About />
       </div>
       <Footer />
